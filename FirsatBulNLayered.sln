@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirsatBul.Entities", "FirsatBul.Entities\FirsatBul.Entities.csproj", "{E65ED45F-0CD8-471E-902A-508A17FE68FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirsatBul.DataAccess", "FirsatBul.DataAccess\FirsatBul.DataAccess.csproj", "{48048191-3946-4A10-8A2B-3D34AD2E648D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirsatBul.Business", "FirsatBul.Business\FirsatBul.Business.csproj", "{3800DD44-DC8F-415D-947A-1227F7D0D574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirsatBul", "FirsatBul\FirsatBul.csproj", "{2BD7602E-BCED-416C-8FED-8F0538514664}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E65ED45F-0CD8-471E-902A-508A17FE68FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65ED45F-0CD8-471E-902A-508A17FE68FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65ED45F-0CD8-471E-902A-508A17FE68FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65ED45F-0CD8-471E-902A-508A17FE68FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48048191-3946-4A10-8A2B-3D34AD2E648D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48048191-3946-4A10-8A2B-3D34AD2E648D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48048191-3946-4A10-8A2B-3D34AD2E648D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48048191-3946-4A10-8A2B-3D34AD2E648D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3800DD44-DC8F-415D-947A-1227F7D0D574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3800DD44-DC8F-415D-947A-1227F7D0D574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3800DD44-DC8F-415D-947A-1227F7D0D574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3800DD44-DC8F-415D-947A-1227F7D0D574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD7602E-BCED-416C-8FED-8F0538514664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD7602E-BCED-416C-8FED-8F0538514664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD7602E-BCED-416C-8FED-8F0538514664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD7602E-BCED-416C-8FED-8F0538514664}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A42D5B73-AEAF-4A4A-8E5A-610A308909F2}
+	EndGlobalSection
+EndGlobal

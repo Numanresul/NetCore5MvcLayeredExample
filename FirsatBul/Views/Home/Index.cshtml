@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var data = ViewBag.currentUser as IEnumerable<string>;
+}
+@model List<FirsatBul.Entities.Firsatlar>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1 class="bg-info text-white">Your Login Details</h1>
+
+<table class="table table-sm table-bordered">
+    <tr><th>Name</th><th>Email</th><th> <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Logout</a></th></tr>
+    <tr>
+        @foreach (string info in data)
+        {
+            <td>@info</td>
+        }
+    </tr>
+</table>
+
+
+<h1 class="bg-info text-white">Db Den Çekilen Fırsat Datalarınız</h1>
+
+<table class="table table-sm table-bordered">
+    <tr><th>Name</th>  <th>Exp. Date</th>  <th>Created By</th>  </tr>
+
+    @foreach (FirsatBul.Entities.Firsatlar firsat in Model)
+    {
+        <tr>
+            <td>@firsat.FirsatName</td>
+            <td>@firsat.FirsatExpirationDate</td>
+            <td>@firsat.CreatedBy</td>
+        </tr>
+    }
+
+</table>

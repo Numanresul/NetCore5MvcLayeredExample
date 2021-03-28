@@ -1,0 +1,100 @@
+﻿@model Login
+@*<h1 class="bg-info text-white">Login</h1>
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <form asp-action="Login" method="post">
+        <input type="hidden" asp-for="ReturnUrl" />
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <div class="form-group">
+            <a asp-action="ForgotPassword">Forgot Password</a>
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+        <a class="btn btn-info" asp-action="GoogleLogin">Log In With Google</a>
+    </form>
+
+    <div style="background:#00ff90">
+        <h2>Important Links</h2>
+        <p><a href="/Admin" target="_blank">Admin</a></p>
+        <p><a href="/Role" target="_blank">Role</a></p>
+        <p><a href="/Claims" target="_blank">Claims</a></p>
+    </div>*@
+
+
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = null;
+}
+<html lang="en">
+<head>
+    <title>Login 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body class="img js-fullheight" style="background-image: url(https://preview.colorlib.com/theme/bootstrap/login-form-20/images/bg.jpg); height: 100%;" cz-shortcut-listen="true">
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Fırsat Bul Numan</h2>
+                </div>
+            </div>
+            <div class="text-danger" asp-validation-summary="All"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-0">
+                        <h3 class="mb-4 text-center">Have an account?</h3>
+                        <form asp-action="Login" method="post" class="signin-form">
+                            <input type="hidden" asp-for="ReturnUrl" />
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="" asp-for="Email">
+                            </div>
+                            <div class="form-group">
+                                <input id="password-field" type="text" class="form-control" placeholder="Password" required="" asp-for="Password">
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-50">
+                                    <label class="checkbox-wrap checkbox-primary">
+                                        Remember Me
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="w-50 text-md-right">
+                                    <a href="#" style="color: #fff">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="w-100 text-center">— Or Sign In With —</p>
+                        <div class="social d-flex text-center">
+                            <a class="px-2 py-2 mr-md-1 rounded btn" asp-action="GoogleLogin"><span class="ion-logo-facebook mr-2"></span> Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    @*<script src="js/main.js"></script>*@
+
+
+</body>
+</html>
+
+
